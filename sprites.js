@@ -52,19 +52,19 @@ const SP = {
 
 const EYES = {
   normal: ['offfwwwffffffwwwffffo', 'offfwewffffffwewffffo'],
-  blink:  ['offffffffffffffffffffo', 'offfooofffffffooffffo'],
-  happy:  ['offffffffffffffffffffo', 'offffefffffffefeffffo'],
+  blink: ['offffffffffffffffffffo', 'offfooofffffffooffffo'],
+  happy: ['offffffffffffffffffffo', 'offffefffffffefeffffo'],
   sleepy: ['offfooofffffffooffffo', 'offfwwwffffffwwwffffo'],
-  left:   ['offfwwwffffffwwwffffo', 'offfewwffffffewwffffo'],
-  right:  ['offfwwwffffffwwwffffo', 'offfwweffffffwweffffo'],
-  excited:['offfoowffffffwooffffo', 'offfowwffffffwwofffo']
+  left: ['offfwwwffffffwwwffffo', 'offfewwffffffewwffffo'],
+  right: ['offfwwwffffffwwwffffo', 'offfwweffffffwweffffo'],
+  excited: ['offfoowffffffwooffffo', 'offfowwffffffwwofffo']
 };
 
 const TAIL_FRAMES = [
-  ['..o','.of','.of','of.','of.','o..','...'],
-  ['.o.','.of','.of','.of','.of','.o.','...'],
-  ['o..','fo.','fo.','.fo','.fo','..o','...'],
-  ['.o.','.of','.of','.of','.of','.o.','...']
+  ['..o', '.of', '.of', 'of.', 'of.', 'o..', '...'],
+  ['.o.', '.of', '.of', '.of', '.of', '.o.', '...'],
+  ['o..', 'fo.', 'fo.', '.fo', '.fo', '..o', '...'],
+  ['.o.', '.of', '.of', '.of', '.of', '.o.', '...']
 ];
 
 const FISH_SPR = [

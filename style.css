@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -240,7 +241,7 @@ canvas#c {
   background: #FFF8F0;
   border: 3px solid #3D2B1F;
   border-radius: 12px;
-  box-shadow: 0 6px 0 #3D2B1F, 0 10px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 0 #3D2B1F, 0 10px 20px rgba(0, 0, 0, 0.3);
   padding: 18px 20px;
   width: 90%;
   max-width: 290px;
