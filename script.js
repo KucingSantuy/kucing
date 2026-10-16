@@ -787,7 +787,7 @@ function doPet() {
   S.squish = 0.22;
   playBlip();
 
-  if (navigator.vibrate) try { navigator.vibrate(25); } catch (e) {}
+  if (navigator.vibrate) try { navigator.vibrate(25); } catch (e) { }
 
   const cc = catCenter();
   addHeart(cc.x + (Math.random() - 0.5) * 12, cc.y - 4);
@@ -843,18 +843,18 @@ function handlePointerDown(e) {
   S.sleepClock = 0;
 
   if (p.x >= windowBounds.x && p.x <= windowBounds.x + windowBounds.w &&
-      p.y >= windowBounds.y && p.y <= windowBounds.y + windowBounds.h) {
+    p.y >= windowBounds.y && p.y <= windowBounds.y + windowBounds.h) {
     playTwinkle();
     for (let i = 0; i < 15; i++) {
       addSparkle(windowBounds.x + 2 + Math.random() * (windowBounds.w - 4),
-                 windowBounds.y + 2 + Math.random() * (windowBounds.h - 4));
+        windowBounds.y + 2 + Math.random() * (windowBounds.h - 4));
     }
     showBubble('kamu liat bintang itu, dik? make a wish ~');
     return;
   }
 
   if (p.x >= lampBounds.x && p.x <= lampBounds.x + lampBounds.w &&
-      p.y >= lampBounds.y && p.y <= lampBounds.y + lampBounds.h) {
+    p.y >= lampBounds.y && p.y <= lampBounds.y + lampBounds.h) {
     S.lampOn = !S.lampOn;
     playClick();
     addSparkle(lampBounds.x + 4, lampBounds.y + 9);
@@ -862,7 +862,7 @@ function handlePointerDown(e) {
   }
 
   if (p.x >= shelfBounds.x && p.x <= shelfBounds.x + shelfBounds.w &&
-      p.y >= shelfBounds.y && p.y <= shelfBounds.y + shelfBounds.h) {
+    p.y >= shelfBounds.y && p.y <= shelfBounds.y + shelfBounds.h) {
     playTwinkle();
     addSparkle(shelfBounds.x + 8, shelfBounds.y + 2);
     showBubble('ada buku dan foto kenangan kita di sini ~');
@@ -870,7 +870,7 @@ function handlePointerDown(e) {
   }
 
   if (p.x >= bowlBounds.x && p.x <= bowlBounds.x + bowlBounds.w &&
-      p.y >= bowlBounds.y && p.y <= bowlBounds.y + bowlBounds.h) {
+    p.y >= bowlBounds.y && p.y <= bowlBounds.y + bowlBounds.h) {
     playBlip();
     addSparkle(bowlBounds.x + 8, bowlBounds.y + 2);
     showBubble('mangkuk makan milik si ' + S.catName + '!');
@@ -878,7 +878,7 @@ function handlePointerDown(e) {
   }
 
   if (p.x >= plantBounds.x && p.x <= plantBounds.x + plantBounds.w &&
-      p.y >= plantBounds.y && p.y <= plantBounds.y + plantBounds.h) {
+    p.y >= plantBounds.y && p.y <= plantBounds.y + plantBounds.h) {
     playBlip();
     addLeaf(plantBounds.x + 4, plantBounds.y + 6);
     return;
